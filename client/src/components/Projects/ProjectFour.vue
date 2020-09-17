@@ -2,20 +2,14 @@
   <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
     <div class="col-lg-6">
       <a href="https://gheptig.github.io/weather-dashboard/" target="_blank"
-        ><img
-          class="img-fluid"
-          src="assets/images/wd-screenshot.PNG"
-          id="project-image-wd"
-          alt="
-            weather"
-        />
+        ><img class="img-fluid" src="" id="project-image-wd" alt="" />
       </a>
     </div>
     <div class="col-lg-6">
       <div class="bg-black text-center h-100 project">
         <div class="d-flex h-100">
           <div class="project-text w-100 my-auto text-center text-lg-left">
-            <h4 class="text-white">Weather Dashboard</h4>
+            <h4 class="text-white">Featured 4</h4>
             <p class="text-white-50">
               This is a basic front-end U.S. city weather dashboard for
               displaying a city's current weather and 5-day forecast. Using
@@ -46,4 +40,14 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+#project-image-wd:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 20px #0275d8;
+  border-radius: 5px;
+}
+
+#repo-link:hover {
+  color: #282828 !important;
+}
+</style>

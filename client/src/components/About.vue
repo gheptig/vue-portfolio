@@ -4,7 +4,11 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <div class="circular-portrait">
-            <!-- <img class="img-fluid" src="assets/images/photo.jpg" alt="headshot"> -->
+            <img
+              class="img-fluid"
+              src="@/assets/images/photo.jpg"
+              alt="headshot"
+            />
           </div>
           <h2 class="text-white mb-4">Hello, my name is Augustus Heptig</h2>
           <p class="text-white-50">
@@ -21,7 +25,11 @@
           </p>
         </div>
       </div>
-      <!-- <img class="img-fluid" src="assets/images/SeekPng.com_sea-vector-png_8291017.png" alt="banksy-png" /> -->
+      <img
+        class="img-fluid"
+        src="@/assets/images/SeekPng.com_sea-vector-png_8291017.png"
+        alt="banksy-png"
+      />
     </div>
   </section>
 </template>
@@ -32,4 +40,30 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.about-section {
+  padding-top: 10rem;
+  background: linear-gradient(
+    to bottom,
+    #000000 0%,
+    rgba(0, 0, 0, 0.9) 75%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.about-section p {
+  margin-bottom: 1rem;
+}
+
+.circular-portrait {
+  width: 14rem;
+  height: 14rem;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 3vw auto;
+}
+.circular-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>

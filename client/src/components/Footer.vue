@@ -10,4 +10,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.footer {
+  padding: 5rem 0;
+  background-color: #000000;
+}
+</style>

@@ -70,4 +70,48 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.contact-section {
+  padding-top: 5rem;
+  background-color: #000000;
+}
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #282828;
+}
+.contact-section .card h4 {
+  font-size: 1rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.contact-section .card h4:hover {
+  transform: scale(1.15);
+}
+.contact-section .card hr {
+  border-color: #282828;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+.contact-section .social {
+  margin-top: 5rem;
+}
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: #fff;
+}
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.25);
+}
+.contact-section .social a:active {
+  color: #fff;
+}
+</style>
