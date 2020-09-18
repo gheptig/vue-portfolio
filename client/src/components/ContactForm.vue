@@ -1,5 +1,11 @@
 <template>
-  <section class="message-section" id="contact">
+  <section
+    class="message-section"
+    id="contact"
+    data-spy="scroll"
+    data-target="#mainNav"
+    data-offset="100"
+  >
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center" id="message-area">

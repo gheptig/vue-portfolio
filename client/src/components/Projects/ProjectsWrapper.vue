@@ -1,5 +1,11 @@
 <template>
-  <section class="projects-section" id="projects">
+  <section
+    class="projects-section"
+    id="projects"
+    data-spy="scroll"
+    data-target="#mainNav"
+    data-offset="100"
+  >
     <div class="container">
       <ProjectOne />
       <ProjectTwo />

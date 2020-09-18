@@ -1,5 +1,11 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav
+    class="navbar navbar-expand-lg navbar-light fixed-top "
+    v-bind:class="{ 'navbar-shrink': moreThan100 }"
+    id="mainNav"
+    v-b-scrollspy
+    @scroll="handleScroll"
+  >
     <div class="container">
       <a
         class="navbar-brand js-scroll-trigger"
@@ -20,7 +26,7 @@
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto ">
           <li class="nav-item">
             <a
               class="nav-link js-scroll-trigger"
@@ -54,6 +60,30 @@
 <script>
 export default {
   name: "Navbar",
+  data: function() {
+    return {
+      moreThan100: false,
+    };
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition > 100) {
+        this.moreThan100 = true;
+      } else {
+        this.moreThan100 = false;
+      }
+
+      console.log(window.scrollY);
+    },
+  },
 };
 </script>
 

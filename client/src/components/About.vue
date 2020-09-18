@@ -1,5 +1,11 @@
 <template>
-  <section class="about-section text-center" id="about">
+  <section
+    class="about-section text-center"
+    id="about"
+    data-spy="scroll"
+    data-target="#mainNav"
+    data-offset="0"
+  >
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">

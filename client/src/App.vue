@@ -39,4 +39,12 @@ export default {
   padding: 0;
   margin: 0;
 }
+
+body {
+  position: relative;
+}
+
+#appWrap {
+  position: relative;
+}
 </style>
