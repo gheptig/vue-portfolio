@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Serve static files from the Vue app build directory
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "client/dist")));
 
 // Express boilerplate middleware
 app.use(logger("dev"));
@@ -23,7 +23,7 @@ app.use("/api", routes);
 // Everything that is not an api request is sent to index.html
 // for client side routing.
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+  res.sendFile(path.join(__dirname, "client/dist", "index.html"));
 });
 
 // Sync sequelize models then start Express app
