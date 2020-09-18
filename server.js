@@ -8,7 +8,7 @@ const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static files from the React app build directory
+// Serve static files from the Vue app build directory
 app.use(express.static(path.join(__dirname, "client/build")));
 
 // Express boilerplate middleware

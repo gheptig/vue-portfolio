@@ -11,12 +11,14 @@
               id="inputName"
               type="name"
               placeholder="Name"
+              v-model="name"
             />
             <input
               class="form-control flex-fill mt-3 mr-0 mr-sm-2 mb-3 mb-sm-0"
               id="inputEmail"
               type="email"
               placeholder="Email"
+              v-model="email"
             />
             <textarea
               class="form-control flex-fill mt-3 mr-0 mr-sm-2 mb-3 mb-sm-0"
@@ -24,8 +26,14 @@
               rows="6"
               type="text"
               placeholder="Message"
+              v-model="note"
             ></textarea>
-            <button type="button" class="btn btn-lg mt-3" id="submit-btn">
+            <button
+              type="button"
+              class="btn btn-lg mt-3"
+              id="submit-btn"
+              @click="submitMessage"
+            >
               SUBMIT
             </button>
           </form>
@@ -36,8 +44,33 @@
 </template>
 
 <script>
+import Axios from "axios";
 export default {
   name: "ContactForm",
+  data: function() {
+    return {
+      name: "",
+      email: "",
+      note: "",
+    };
+  },
+  methods: {
+    submitMessage: function() {
+      // console.log("click");
+      Axios.post("api/newmessage", {
+        name: this.name,
+        email: this.email,
+        note: this.note,
+      })
+        .then((res) => {
+          console.log(res);
+          this.name = "";
+          this.email = "";
+          this.note = "";
+        })
+        .catch((err) => console.log(err));
+    },
+  },
 };
 </script>
 
