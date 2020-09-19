@@ -43,8 +43,4 @@ export default {
 body {
   position: relative;
 }
-
-#appWrap {
-  position: relative;
-}
 </style>
