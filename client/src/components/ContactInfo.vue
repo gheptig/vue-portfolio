@@ -5,47 +5,55 @@
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
-              <i class="fas fa fa-address-card fa-2x text-dark mb-2"></i>
-              <h4 class="m-0">
-                <a
-                  class="text-decoration-none text-dark"
+              <a
+                class="text-decoration-none text-dark"
+                href="./heptig_augustus_resume.pdf"
+                target="_blank"
+              >
+                <i
+                  class="fas fa fa-address-card fa-2x text-dark mb-2"
                   id="resume"
-                  href="assets/pdf/heptig_augustus_resume.pdf"
-                  target="_blank"
-                  >RESUME</a
-                >
+                ></i
+              ></a>
+              <h4 class="m-0">
+                RESUME
               </h4>
               <hr class="my-4" />
               <div class="small text-black-50"></div>
             </div>
+            <b-tooltip target="resume" triggers="hover">
+              Link to Resume
+            </b-tooltip>
           </div>
         </div>
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
-              <i class="fas fa-envelope fa-2x text-dark mb-2"></i>
+              <i class="fas fa-envelope fa-2x text-dark mb-2" id="email"></i>
               <h4 class="m-0">
-                <a class="text-decoration-none text-dark" id="email" href="#"
-                  >EMAIL</a
-                >
+                <a class="text-decoration-none text-dark" href="#">EMAIL</a>
               </h4>
               <hr class="my-4" />
               <div class="small text-black-50"><a href="#!"></a></div>
             </div>
+            <b-tooltip target="email" triggers="hover">
+              gusheptig@gmail.com
+            </b-tooltip>
           </div>
         </div>
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
-              <i class="fas fa-mobile-alt fa-2x text-dark mb-2"></i>
+              <i class="fas fa-mobile-alt fa-2x text-dark mb-2" id="phone"></i>
               <h4 class="m-0">
-                <a class="text-decoration-none text-dark" id="phone" href="#"
-                  >PHONE</a
-                >
+                <a class="text-decoration-none text-dark" href="#">PHONE</a>
               </h4>
               <hr class="my-4" />
               <div class="small text-black-50"></div>
             </div>
+            <b-tooltip target="phone" triggers="hover">
+              207-206-5175
+            </b-tooltip>
           </div>
         </div>
       </div>
@@ -87,7 +95,7 @@ export default {
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
-.contact-section .card h4:hover {
+.contact-section .card i:hover {
   transform: scale(1.15);
 }
 .contact-section .card hr {

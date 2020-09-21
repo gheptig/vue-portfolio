@@ -39,21 +39,28 @@
               class="btn btn-lg mt-3"
               id="submit-btn"
               @click="submitMessage"
-            >
-              SUBMIT
-            </button>
+            >SUBMIT</button>
           </form>
         </div>
       </div>
+      <b-modal ref="alert-modal" hide-header-close>
+        <template v-slot:modal-header>
+          <h5 class="mx-auto" style="font-size: 24px">ERROR!</h5>
+        </template>
+        <p class="text-center" style="font-size: 18px">There is nothing to submit...</p>
+        <template v-slot:modal-footer>
+          <b-button type="button" class="btn mx-auto" @click="hideModal">Close</b-button>
+        </template>
+      </b-modal>
     </div>
   </section>
 </template>
-
+  
 <script>
 import Axios from "axios";
 export default {
   name: "ContactForm",
-  data: function() {
+  data: function () {
     return {
       name: "",
       email: "",
@@ -61,20 +68,27 @@ export default {
     };
   },
   methods: {
-    submitMessage: function() {
+    submitMessage: function () {
       // console.log("click");
-      Axios.post("api/newmessage", {
-        name: this.name,
-        email: this.email,
-        note: this.note,
-      })
-        .then((res) => {
-          console.log(res);
-          this.name = "";
-          this.email = "";
-          this.note = "";
+      if (!this.name && !this.email && !this.note) {
+        this.$refs["alert-modal"].show();
+      } else {
+        Axios.post("api/newmessage", {
+          name: this.name,
+          email: this.email,
+          note: this.note,
         })
-        .catch((err) => console.log(err));
+          .then((res) => {
+            console.log(res);
+            this.name = "";
+            this.email = "";
+            this.note = "";
+          })
+          .catch((err) => console.log(err));
+      }
+    },
+    hideModal: function () {
+      this.$refs["alert-modal"].hide();
     },
   },
 };
