@@ -29,52 +29,61 @@
       </div>
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mt-3">Technologies</h2>
+          <h2 class="text-white mt-3">Featured Technologies</h2>
         </div>
       </div>
 
-      <div class="row mt-2">
+      <div class="row mt-2 techRow rounded-top">
         <div class="col-lg-4">
-          <img
-            class="img-fluid mx-auto img-thumbnail"
-            src="@/assets/images/html.png"
-            alt="html5Logo"
-          />
+          <img class="img-fluid mx-auto mb-1" src="@/assets/images/html.png" alt="html5Logo" />
+          <h3 class="text-white">HTML5</h3>
         </div>
         <div class="col-lg-4">
-          <img class="img-fluid mx-auto" src="@/assets/images/css.png" alt="css3Logo" />
+          <img class="img-fluid mx-auto mb-1" src="@/assets/images/css.png" alt="css3Logo" />
+          <h3 class="text-white">CSS3</h3>
         </div>
         <div class="col-lg-4">
-          <img class="img-fluid mx-auto" src="@/assets/images/js.png" alt="jsLogo" />
-        </div>
-      </div>
-
-      <div class="row mt-2">
-        <div class="col-lg-4">
-          <img class="img-fluid mx-auto" src="@/assets/images/react.png" alt="reactLogo" />
-        </div>
-        <div class="col-lg-4">
-          <img class="img-fluid mx-auto" src="@/assets/images/vue.png" alt="vueLogo" />
-        </div>
-        <div class="col-lg-4">
-          <img class="img-fluid mx-auto" src="@/assets/images/jquery.png" alt="jqueryLogo" />
+          <img class="img-fluid mx-auto mb-1" src="@/assets/images/js.png" alt="jsLogo" />
+          <h3 class="text-white">JavaScript</h3>
         </div>
       </div>
 
-      <div class="row mt-2">
+      <div class="row techRow">
         <div class="col-lg-4">
-          <img class="img-fluid mx-auto" src="@/assets/images/node.png" alt="nodeLogo" />
+          <img class="img-fluid mx-auto mb-1" src="@/assets/images/react.png" alt="reactLogo" />
+          <h3 class="text-white">React.js</h3>
         </div>
         <div class="col-lg-4">
-          <img class="img-fluid mx-auto" src="@/assets/images/bootstrap.png" alt="expressLogo" />
+          <img class="img-fluid mx-auto mb-1" src="@/assets/images/vue.png" alt="vueLogo" />
+          <h3 class="text-white">Vue.js</h3>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid mx-auto mb-1" src="@/assets/images/jquery.png" alt="jqueryLogo" />
+          <h3 class="text-white">jQuery</h3>
+        </div>
+      </div>
+
+      <div class="row techRow rounded-bottom">
+        <div class="col-lg-4">
+          <img class="img-fluid mx-auto mb-1" src="@/assets/images/node.png" alt="nodeLogo" />
+          <h3 class="text-white">Node.js</h3>
         </div>
         <div class="col-lg-4">
           <img class="img-fluid mx-auto" src="@/assets/images/mysql.png" alt="mysqlLogo" />
+          <h3 class="text-white">MySQL</h3>
+        </div>
+        <div class="col-lg-4">
+          <img
+            class="img-fluid mx-auto mb-1"
+            src="@/assets/images/bootstrap.png"
+            alt="bootstrapLogo"
+          />
+          <h3 class="text-white">Bootstrap</h3>
         </div>
       </div>
 
       <img
-        class="img-fluid mx-auto"
+        class="img-fluid mx-auto mt-2"
         src="@/assets/images/SeekPng.com_sea-vector-png_8291017.png"
         alt="banksy-png"
       />
@@ -115,11 +124,8 @@ export default {
   object-fit: cover;
 }
 
-/* . {
-  width: 250px;
-  height: 250px;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-} */
+.techRow {
+  background-color: rgba(84, 84, 84, 0.25);
+  padding: 15px;
+}
 </style>
