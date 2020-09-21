@@ -10,15 +10,11 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <div class="circular-portrait">
-            <img
-              class="img-fluid"
-              src="@/assets/images/photo.jpg"
-              alt="headshot"
-            />
+            <img class="img-fluid mx-auto" src="@/assets/images/photo.jpg" alt="headshot" />
           </div>
           <h2 class="text-white mb-4">Hello, my name is Augustus Heptig</h2>
           <p class="text-white-50">
-            I am a aspiring full-stack developer located in the southern Maine
+            I am a full-stack developer located in the southern Maine
             area. I am drawn to reading and writing code because it is
             collaborative, systematic, and involves a lot of problem solving. In
             my free time I enjoy DIY projects, going to the movies, and being
@@ -31,8 +27,54 @@
           </p>
         </div>
       </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mt-3">Technologies</h2>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-lg-4">
+          <img
+            class="img-fluid mx-auto img-thumbnail"
+            src="@/assets/images/html.png"
+            alt="html5Logo"
+          />
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid mx-auto" src="@/assets/images/css.png" alt="css3Logo" />
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid mx-auto" src="@/assets/images/js.png" alt="jsLogo" />
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-lg-4">
+          <img class="img-fluid mx-auto" src="@/assets/images/react.png" alt="reactLogo" />
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid mx-auto" src="@/assets/images/vue.png" alt="vueLogo" />
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid mx-auto" src="@/assets/images/jquery.png" alt="jqueryLogo" />
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-lg-4">
+          <img class="img-fluid mx-auto" src="@/assets/images/node.png" alt="nodeLogo" />
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid mx-auto" src="@/assets/images/bootstrap.png" alt="expressLogo" />
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid mx-auto" src="@/assets/images/mysql.png" alt="mysqlLogo" />
+        </div>
+      </div>
+
       <img
-        class="img-fluid"
+        class="img-fluid mx-auto"
         src="@/assets/images/SeekPng.com_sea-vector-png_8291017.png"
         alt="banksy-png"
       />
@@ -72,4 +114,12 @@ export default {
   height: 100%;
   object-fit: cover;
 }
+
+/* . {
+  width: 250px;
+  height: 250px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+} */
 </style>
