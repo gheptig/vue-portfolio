@@ -10,15 +10,18 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <div class="circular-portrait">
-            <img class="img-fluid mx-auto" src="@/assets/images/photo.jpg" alt="headshot" />
+            <img
+              class="img-fluid mx-auto"
+              src="@/assets/images/photo.jpg"
+              alt="headshot"
+            />
           </div>
           <h2 class="text-white mb-4">Hello, my name is Augustus Heptig</h2>
           <p class="text-white-50">
-            I am a full-stack developer located in the southern Maine
-            area. I am drawn to reading and writing code because it is
-            collaborative, systematic, and involves a lot of problem solving. In
-            my free time I enjoy DIY projects, going to the movies, and being
-            around the ocean.
+            I am a full-stack developer located in the southern Maine area. I am
+            drawn to reading and writing code because it is collaborative,
+            systematic, and involves a lot of problem solving. In my free time I
+            enjoy DIY projects, going to the movies, and being around the ocean.
           </p>
           <p class="text-white-50">
             As my experience grows, so will my GitHub profile, so please stay
@@ -35,50 +38,91 @@
 
       <div class="row mt-2 techRow rounded-top">
         <div class="col-lg-4">
-          <img class="img-fluid mx-auto mb-1" src="@/assets/images/html.png" alt="html5Logo" />
+          <img
+            class="img-fluid mx-auto mb-1"
+            id="techImg"
+            src="@/assets/images/html.png"
+            alt="html5Logo"
+          />
           <h3 class="text-white">HTML5</h3>
         </div>
         <div class="col-lg-4">
-          <img class="img-fluid mx-auto mb-1" src="@/assets/images/css.png" alt="css3Logo" />
+          <img
+            class="img-fluid mx-auto mb-1"
+            id="techImg"
+            src="@/assets/images/css.png"
+            alt="css3Logo"
+          />
           <h3 class="text-white">CSS3</h3>
         </div>
         <div class="col-lg-4">
-          <img class="img-fluid mx-auto mb-1" src="@/assets/images/js.png" alt="jsLogo" />
+          <img
+            class="img-fluid mx-auto mb-1"
+            id="techImg"
+            src="@/assets/images/js.png"
+            alt="jsLogo"
+          />
           <h3 class="text-white">JavaScript</h3>
         </div>
       </div>
 
       <div class="row techRow">
         <div class="col-lg-4">
-          <img class="img-fluid mx-auto mb-1" src="@/assets/images/react.png" alt="reactLogo" />
+          <img
+            class="img-fluid mx-auto mb-1"
+            id="techImg"
+            src="@/assets/images/react.png"
+            alt="reactLogo"
+          />
           <h3 class="text-white">React.js</h3>
         </div>
         <div class="col-lg-4">
-          <img class="img-fluid mx-auto mb-1" src="@/assets/images/vue.png" alt="vueLogo" />
+          <img
+            class="img-fluid mx-auto mb-1"
+            id="techImg"
+            src="@/assets/images/vue.png"
+            alt="vueLogo"
+          />
           <h3 class="text-white">Vue.js</h3>
         </div>
         <div class="col-lg-4">
-          <img class="img-fluid mx-auto mb-1" src="@/assets/images/jquery.png" alt="jqueryLogo" />
+          <img
+            class="img-fluid mx-auto mb-1"
+            id="techImg"
+            src="@/assets/images/jquery.png"
+            alt="jqueryLogo"
+          />
           <h3 class="text-white">jQuery</h3>
         </div>
       </div>
 
       <div class="row techRow rounded-bottom">
         <div class="col-lg-4">
-          <img class="img-fluid mx-auto mb-1" src="@/assets/images/node.png" alt="nodeLogo" />
+          <img
+            class="img-fluid mx-auto mb-1"
+            id="techImg"
+            src="@/assets/images/node.png"
+            alt="nodeLogo"
+          />
           <h3 class="text-white">Node.js</h3>
         </div>
         <div class="col-lg-4">
-          <img class="img-fluid mx-auto" src="@/assets/images/mysql.png" alt="mysqlLogo" />
+          <img
+            class="img-fluid mx-auto"
+            id="techImg"
+            src="@/assets/images/mysql.png"
+            alt="mysqlLogo"
+          />
           <h3 class="text-white">MySQL</h3>
         </div>
         <div class="col-lg-4">
           <img
             class="img-fluid mx-auto mb-1"
-            src="@/assets/images/bootstrap.png"
-            alt="bootstrapLogo"
+            id="techImg"
+            src="@/assets/images/mongo.png"
+            alt="mongoLogo"
           />
-          <h3 class="text-white">Bootstrap</h3>
+          <h3 class="text-white">MongoDB</h3>
         </div>
       </div>
 
@@ -127,5 +171,11 @@ export default {
 .techRow {
   background-color: rgba(84, 84, 84, 0.25);
   padding: 15px;
+}
+
+#techImg {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 5px;
 }
 </style>

@@ -13,16 +13,25 @@
     <div class="col-xl-4 col-lg-5">
       <div class="featured-text text-center text-lg-left ml-3">
         <h4 class="text-white">Envira</h4>
-        <p
-          class="text-white-50 mb-0"
-        >Utilizing Amazon Web Services, this environmental application uses an AI robot (Envira) to interact with users and read information. Envira is designed to have personality, and is a fun interactive way to deliver climate change data. A user (company or individual) can also create, join, and search environmentally friendly events.</p>
-        <h6 class="mt-1">
+        <p class="text-white-50 mb-1">
+          Utilizing Amazon Web Services, this environmental application uses an
+          AI robot (Envira) to interact with users and read information. Envira
+          is designed to have personality, and is a fun interactive way to
+          deliver climate change data. A user (company or individual) can also
+          create, join, and search environmentally friendly events.
+        </p>
+        <p class="text-white-50 mb-0">
+          Featured Technologies: React.js, Node.js, MySQL, Sequelize,
+          Express.js, AWS Amplify, AWS EC2, AWS Lex, AWS Polly, React-Bootstrap.
+        </p>
+        <h6 class="mt-2">
           <a
             class="text-light"
             id="repo-link"
             href="https://github.com/gheptig/Envira"
             target="_blank"
-          >REPO LINK</a>
+            >REPO LINK</a
+          >
         </h6>
       </div>
     </div>

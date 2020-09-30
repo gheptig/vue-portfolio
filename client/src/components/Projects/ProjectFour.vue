@@ -1,7 +1,10 @@
 <template>
   <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
     <div class="col-lg-6">
-      <a href="https://gheptig.github.io/react-employee-directory/" target="_blank">
+      <a
+        href="https://gheptig.github.io/react-employee-directory/"
+        target="_blank"
+      >
         <img
           class="img-fluid"
           src="@/assets/images/employee.png"
@@ -15,9 +18,16 @@
         <div class="d-flex h-100">
           <div class="project-text w-100 my-auto text-center text-lg-left ml-3">
             <h4 class="text-white">Employee Directory</h4>
-            <p
-              class="text-white-50"
-            >This is a simple React front-end application that allows a user to filter and sort data contained in a table of employees. The purpose of this application is to become familiar and demonstrate the basics of React such as: writing JSX, building/importing components, and setting state/using props.</p>
+            <p class="text-white-50">
+              This is a simple React front-end application that allows a user to
+              filter and sort data contained in a table of employees. The
+              purpose of this application is to become familiar and demonstrate
+              the basics of React such as: writing JSX, building/importing
+              components, and setting state/using props.
+            </p>
+            <p class="text-white-50 mb-0">
+              Featured Technologies: React.js, Node.js, Bootstrap.
+            </p>
             <hr class="d-none d-lg-block ml-0" />
             <h6 class="mt-1">
               <a
@@ -25,7 +35,8 @@
                 id="repo-link"
                 href="https://github.com/gheptig/react-employee-directory"
                 target="_blank"
-              >REPO LINK</a>
+                >REPO LINK</a
+              >
             </h6>
           </div>
         </div>

@@ -15,9 +15,7 @@
                   id="resume"
                 ></i
               ></a>
-              <h4 class="m-0">
-                RESUME
-              </h4>
+              <h4 class="m-0">RESUME</h4>
               <hr class="my-4" />
               <div class="small text-black-50"></div>
             </div>
@@ -59,13 +57,13 @@
       </div>
       <div class="social d-flex justify-content-center">
         <a class="mx-2" href="https://github.com/gheptig" target="_blank"
-          ><i class="fab fa-github"></i
+          ><i class="fab fa-github fa-lg"></i
         ></a>
         <a
           class="mx-2"
           href="https://www.linkedin.com/in/augustus-h/"
           target="_blank"
-          ><i class="fab fa-linkedin"></i
+          ><i class="fab fa-linkedin fa-lg"></i
         ></a>
       </div>
     </div>

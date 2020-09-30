@@ -13,12 +13,17 @@
     <div class="col-lg-6 order-lg-first">
       <div class="bg-black text-center h-100 project">
         <div class="d-flex h-100">
-          <div class="project-text w-100 my-auto text-center text-lg-right mr-3">
+          <div
+            class="project-text w-100 my-auto text-center text-lg-right mr-3"
+          >
             <h4 class="text-white">Movie Phood</h4>
             <p class="text-white-50">
               Created for movie and food lovers alike, this is a front-end
               application that returns a movie/food/drink combination based on a
               user's preferences and tastes.
+            </p>
+            <p class="text-white-50 mb-0">
+              Featured Technologies: jQuery, Materialize, HTML, CSS.
             </p>
             <hr class="d-none d-lg-block mr-0" />
             <h6 class="mt-1">
@@ -27,7 +32,8 @@
                 id="repo-link"
                 href="https://github.com/gheptig/movie-phood"
                 target="_blank"
-              >REPO LINK</a>
+                >REPO LINK</a
+              >
             </h6>
           </div>
         </div>
